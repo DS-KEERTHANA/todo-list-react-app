@@ -26,24 +26,24 @@ let AddTask = () => {
 
   return (
     <div id="mainaddtask">
-      <div id="home-1">
-        <Container id="btns">
+      <div id="home-1" className="d-grid justify-content-center align-items-center w-auto h-auto">
+        <Container id="btns" className=" justify-content-center align-items-center">
           <Row>
-            <Col className="cols">
+            <Col className="cols" lg={4} md={12} xs={12} >
               <Link className="links" to={"/home"}>
                 <Button className="btns" variant="outline-primary">
                   Home
                 </Button>
               </Link>
             </Col>
-            <Col className="cols">
+            <Col className="cols" lg={4} md={12} xs={12}>
               <Link className="links" to="/tasks">
                 <Button className="btns" variant="outline-primary">
                   Tasks
                 </Button>
               </Link>
             </Col>
-            <Col className="cols">
+            <Col className="cols" lg={4} md={12} xs={12}>
               <Link className="links" to="/addtask">
                 <Button className="btns" variant="outline-primary">
                   Add Task
@@ -53,19 +53,19 @@ let AddTask = () => {
           </Row>
           <br />
           <Row>
-            <Col>
+            <Col lg={12} md={12} xs={12}>
               <h3>To-Do List</h3>
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col lg={12} md={12} xs={12}>
               <p>Add to New Task</p>
             </Col>
           </Row>
         </Container>
-        <Container fluid>
+        <Container fluid className="d-grid justify-content-center align-items-center">
           <Row>
-            <Col>
+            <Col lg={12} md={12} xs={12}>
               <Form>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
                   <Form.Control
@@ -80,9 +80,9 @@ let AddTask = () => {
             </Col>
           </Row>
         </Container>
-        <Container>
+        <Container className="d-grid justify-content-center align-items-center">
           <Row>
-            <Col>
+            <Col lg={12} md={12} xs={12}>
               <Button onClick={addTask} variant="info">
                 Add Task
               </Button>

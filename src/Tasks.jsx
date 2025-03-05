@@ -22,24 +22,24 @@ let Tasks = () => {
 
   return (
     <div id="maintask">
-      <div id="home-1">
+      <div id="home-1" className="d-flex justify-content-center align-items-center w-100">
         <Container id="btns">
           <Row>
-            <Col className="cols">
+            <Col lg={4} md={12} xs={12} className="cols">
               <Link className="links" to={"/home"}>
                 <Button className="btns" variant="outline-primary">
                   Home
                 </Button>
               </Link>
             </Col>
-            <Col className="cols">
+            <Col lg={4} md={12} xs={12} className="cols">
               <Link className="links" to="/tasks">
                 <Button className="btns" variant="outline-primary">
                   Tasks
                 </Button>
               </Link>
             </Col>
-            <Col className="cols">
+            <Col lg={4} md={12} xs={12} className="cols">
               <Link className="links" to="/addtask">
                 <Button className="btns" variant="outline-primary">
                   Add Task

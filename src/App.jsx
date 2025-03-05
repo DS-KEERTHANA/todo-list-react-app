@@ -2,7 +2,7 @@ import React, { useState, createContext } from "react";
 import "./App.css";
 import Home from "./Home";
 import Tasks from "./Tasks";
-import AddTask from "./AddTask";
+import AddTask from "./Addtask";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
